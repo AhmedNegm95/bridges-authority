@@ -8,67 +8,524 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css" />
 
-    <!-- Cairo Font -->
-    <link href="https://fonts.googleapis.com/css?family=Cairo:300,400,600,700&display=swap" rel="stylesheet" />
+    <!-- Almarai Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap" rel="stylesheet">
+
+    <!-- slick styles -->
+    <link href="./styles/vendors/slick/slick.css" rel="stylesheet">
+    <link href="./styles/vendors/slick/slick-theme.css" rel="stylesheet">
 
     <!-- main style -->
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="styles/main.css" />
 
-    <!-- countdown timer -->
-    <script type="text/javascript" src="js/CountDownJS.js"></script>
-    <script src="js/script.js"></script>
+    
 
     <title>Bridges Authority</title>
   </head>
   <body>
 
 
-    <section class="counter">
-      <div class="container">
-        <div class="content">
-          <div class="logo">
-            <img src="./images/icons/logo.png" alt="">
-          </div>
-          <div class="soon">
-            <span>قريبا</span>
+
+
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#">
+          <img src="images/icons/logo.svg" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                عن الهيئة
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                المشاريع
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">المناطق</a>
+            </li> 
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                الادارات
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li> 
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                الخدمات
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li> 
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                المركز الاعلامي
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>           
+            <li class="nav-item">
+              <a class="nav-link" href="#">مناقصات</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">وظائف</a>
+            </li>
+
+          </ul>
+
+          <div class="login">
+            <button class="btn login-btn">تسجيل الدخول</button>
           </div>
 
-          <div align="center" style="width: 100%">
-          
-            <div align="center" style="margin-bottom: 100px; width: 60%">
-              <script>
-                countDown1 = new CountDownObject(); //add countdown as object
-        
-                countDown1.TIME_ZONE = +2, // your time zone (-12 ... +14)
-        
-                  // Your date and time
-                  countDown1.SET_YOUR_SEC = 0,
-                  countDown1.SET_YOUR_MIN = 0,
-                  countDown1.SET_YOUR_HOUR = 13,
-                  countDown1.SET_YOUR_DAY = 01,
-                  countDown1.SET_YOUR_MONTH = 04,
-                  countDown1.SET_YOUR_YEAR = 2021,
-        
-                  countDown1.NUM_OF_ELEMENTS = 8, // number of flip-elements(from 1 to 9)
-                  countDown1.TIME_ANIMATION = 950, // time of flip animation in milliseconds(from 50 to 950)
-                  countDown1.BACK_COLOR = "#FFF", // flip-element back color
-                  countDown1.DIGITS_COLOR = "#757779", // digits color on flip-elements
-                  countDown1.TEXT_COLOR = "#E2B111", // text color under flip elements(seconds, minutes and etc.)
-                  countDown1.IS_DYNAMIC_COLOR = false, // back color will vary(true or false)
-        
-                  countDown1.CANVAS_NAME = "CountDownCanvas";  //canvas name in html-code
-        
-                countDown1.Start(); //start countdown
-              </script>
-            </div>
-          
-          </div>
+          <!-- <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form> -->
+        </div>
+      </nav>
+    </div>
 
+    <section class="welcome-slider" dir="rtl">
+      <div class="slider">
+        <div class="slide">
+          <img src="./images/background.jpg" alt="">
+          <div class="overlay">
+            <h1>الهيئة العامة للطرق والكباري</h1>
+            <h1>ترحب بكم</h1>
+          </div>
+        </div>
+        <div class="slide">
+          <img src="./images/background.jpg" alt="">
+          <div class="overlay">
+            <h1>الهيئة العامة للطرق والكباري</h1>
+            <h1>ترحب بكم</h1>
+          </div>
+        </div>
+        <div class="slide">
+          <img src="./images/background.jpg" alt="">
+          <div class="overlay">
+            <h1>الهيئة العامة للطرق والكباري</h1>
+            <h1>ترحب بكم</h1>
+          </div>
         </div>
       </div>
     </section>
 
+    <section class="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-7">
+            <div class="desc">
+              <h2 class="heading">عن الهيئة</h2>
+              <p>يوضع هنا وصف عن الهيئة وقد يتكون من سطرين مثال هذا النص. يوضع هنا وصف عن الهيئة وقد يتكون من سطرين مثال هذا النص.يوضع هنا وصف عن الهيئة وقد يتكون من سطرين مثال هذا النص. يوضع هنا وصف عن الهيئة وقد يتكون من سطرين مثال هذا النص. يوضع هنا وصف عن الهيئة وقد يتكون من سطرين مثال هذا النص.يوضع هنا وصف عن الهيئة وقد يتكون من سطرين مثال هذا النص.</p>
+              <a class="more-link" href="#">
+                <span>المزيد</span>
+                <img src="./images/icons/more-arrow.svg" alt="">
+              </a>
+            </div>
+          </div>
+          <div class="col-5">
+            <div class="images-container">
+              <div class="images">
+                <img src="./images/background.jpg" alt="">
+                <img src="./images/IMG_4004.png" alt="">
+                <div class="logo">
+                  <img src="./images/icons/logo.svg" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <section class="statistics">
+      <div class="container">
+        <h2 class="heading">إحصائيات</h2>
+
+        <!-- <div class="slider">
+          <div class="row"></div>
+        </div> -->
+
+        <div class="slider">
+          <div class="slide">
+            <h3>1102</h3>
+            <p>اطوال الطرق1</p>
+          </div>
+          <div class="slide">
+            <h3>1102</h3>
+            <p>2اطوال الطرق</p>
+          </div>
+          <div class="slide">
+            <h3>1102</h3>
+            <p>اطوال الطرق3</p>
+          </div>
+          <div class="slide">
+            <h3>1102</h3>
+            <p>اطوال الطرق4</p>
+          </div>
+          <div class="slide">
+            <h3>1102</h3>
+            <p>اطوال الطرق5</p>
+          </div>
+          <div class="slide">
+            <h3>1102</h3>
+            <p>اطوال الطرق6</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <div class="latest-news">
+      <div class="container">
+        <h2 class="heading">أحدث الأخبار</h2>
+
+        <div class="row">
+          <div class="col-7">
+            <div class="news-slider">
+              <div class="slider">
+
+                <div class="slide">
+                  <img src="./images/IMG_4004.png" alt="">
+                  <h3>13.2 مليار جنيه جملة موازنة "هيئة الطرق والكبارى</h3>
+                  <p>تواصل اللجان النوعية بمجلس النواب مناقشة مشروع الموازنة العامة للدولة للسنة المالية الجديدة 2019/2020 - كل لجنة فى ضوء اختصاصاتها، ومن بينها لجنة الشئون الصحية التى تناقش موازنات قطاعات وهيئات الصحة والسكان، ومنها الهيئة القومية للرقابة والبحوث الدوائية.
+                    وبلغ إجمالى مشروع موازنة الهيئة القومية للرقابة والبحوث الدوائية للسنة المالية 2019/2020،…</p>
+                  <a class="more-link" href="#">
+                    <span>المزيد</span>
+                    <img src="./images/icons/more-arrow.svg" alt="">
+                  </a>
+                </div>
+                <div class="slide">
+                  <img src="./images/IMG_4004.png" alt="">
+                  <h3>13.2 مليار جنيه جملة موازنة "هيئة الطرق والكبارى</h3>
+                  <p>تواصل اللجان النوعية بمجلس النواب مناقشة مشروع الموازنة العامة للدولة للسنة المالية الجديدة 2019/2020 - كل لجنة فى ضوء اختصاصاتها، ومن بينها لجنة الشئون الصحية التى تناقش موازنات قطاعات وهيئات الصحة والسكان، ومنها الهيئة القومية للرقابة والبحوث الدوائية.
+                    وبلغ إجمالى مشروع موازنة الهيئة القومية للرقابة والبحوث الدوائية للسنة المالية 2019/2020،…</p>
+                  <a class="more-link" href="#">
+                    <span>المزيد</span>
+                    <img src="./images/icons/more-arrow.svg" alt="">
+                  </a>
+                </div>
+                <div class="slide">
+                  <img src="./images/IMG_4004.png" alt="">
+                  <h3>13.2 مليار جنيه جملة موازنة "هيئة الطرق والكبارى</h3>
+                  <p>تواصل اللجان النوعية بمجلس النواب مناقشة مشروع الموازنة العامة للدولة للسنة المالية الجديدة 2019/2020 - كل لجنة فى ضوء اختصاصاتها، ومن بينها لجنة الشئون الصحية التى تناقش موازنات قطاعات وهيئات الصحة والسكان، ومنها الهيئة القومية للرقابة والبحوث الدوائية.
+                    وبلغ إجمالى مشروع موازنة الهيئة القومية للرقابة والبحوث الدوائية للسنة المالية 2019/2020،…</p>
+                  <a class="more-link" href="#">
+                    <span>المزيد</span>
+                    <img src="./images/icons/more-arrow.svg" alt="">
+                  </a>
+                </div>
+                <div class="slide">
+                  <img src="./images/IMG_4004.png" alt="">
+                  <h3>13.2 مليار جنيه جملة موازنة "هيئة الطرق والكبارى</h3>
+                  <p>تواصل اللجان النوعية بمجلس النواب مناقشة مشروع الموازنة العامة للدولة للسنة المالية الجديدة 2019/2020 - كل لجنة فى ضوء اختصاصاتها، ومن بينها لجنة الشئون الصحية التى تناقش موازنات قطاعات وهيئات الصحة والسكان، ومنها الهيئة القومية للرقابة والبحوث الدوائية.
+                    وبلغ إجمالى مشروع موازنة الهيئة القومية للرقابة والبحوث الدوائية للسنة المالية 2019/2020،…</p>
+                  <a class="more-link" href="#">
+                    <span>المزيد</span>
+                    <img src="./images/icons/more-arrow.svg" alt="">
+                  </a>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <div class="col-5">
+            <div class="details">
+              <div class="single-news">
+                <img src="./images/IMG_4004.png" alt="">
+                <div class="info">
+                  <h4>13.2 مليار جنيه جملة موازنة "هيئة الطرق والكبارى</h4>
+                  <p>بلغت جملة موازنة الهيئة العامة للطرق والكبارى والنقل البري خلال العام المالي الجديد 2019/2020، نحو 13 مليار و18 مليون و138 ألف جنيه مقابل…</p>
+                </div>
+              </div>
+              <div class="single-news">
+                <img src="./images/IMG_4004.png" alt="">
+                <div class="info">
+                  <h4>13.2 مليار جنيه جملة موازنة "هيئة الطرق والكبارى</h4>
+                  <p>بلغت جملة موازنة الهيئة العامة للطرق والكبارى والنقل البري خلال العام المالي الجديد 2019/2020، نحو 13 مليار و18 مليون و138 ألف جنيه مقابل…</p>
+                </div>
+              </div>
+              <div class="single-news">
+                <img src="./images/IMG_4004.png" alt="">
+                <div class="info">
+                  <h4>13.2 مليار جنيه جملة موازنة "هيئة الطرق والكبارى</h4>
+                  <p>بلغت جملة موازنة الهيئة العامة للطرق والكبارى والنقل البري خلال العام المالي الجديد 2019/2020، نحو 13 مليار و18 مليون و138 ألف جنيه مقابل…</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="int-map">
+      <div class="container">
+        <h2 class="heading">الخريطة التفاعلية</h2>
+        <div class="map">
+          <iframe
+          src="https://www.google.com/maps/embed?pb0=!1m18!1m12!1m3!1d110511.88983866366!2d31.348074665374476!3d30.051297992467337!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14583fa60b21beeb%3A0x79dfb296e8423bba!2z2KfZhNmC2KfZh9ix2KnYjCDZhdit2KfZgdi42Kkg2KfZhNmC2KfZh9ix2KnigKw!5e0!3m2!1sar!2seg!4v1561289936066!5m2!1sar!2seg"
+          width="100%" height="600px" frameborder="0" style=" border-radius: 6px;"
+          allowfullscreen></iframe>
+        </div>
+      </div>
+    </section>
+
+    <section class="services">
+      <div class="container">
+        <h2 class="heading">خدمات الهيئة</h2>
+        <div class="slider">
+          <div class="slide">
+            <img src="./images/IMG_4004.png" alt="">
+            <h3>خدمات مصنع العلامات</h3>
+          </div>
+          <div class="slide">
+            <img src="./images/IMG_4004.png" alt="">
+            <h3>خدمات مصنع العلامات</h3>
+          </div>
+          <div class="slide">
+            <img src="./images/IMG_4004.png" alt="">
+            <h3>خدمات مصنع العلامات العلامات</h3>
+          </div>
+          <div class="slide">
+            <img src="./images/IMG_4004.png" alt="">
+            <h3>خدمات مصنع العلامات</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="projects">
+      <div class="container">
+        <div class="head">
+          <h2 class="heading">المشاريع القائمة</h2>
+          <a class="more-link" href="#">
+            <span>المزيد</span>
+            <img src="./images/icons/more-arrow.svg" alt="">
+          </a>
+        </div>
+
+        <div class="slider">
+          <div class="slide">
+            <div class="project">
+              <div class="row">
+                <div class="col-5">
+                  <div class="images">
+                    <img src="./images/IMG_4004.png" alt="">
+                    <img src="./images/IMG_4004.png" alt="">
+                  </div>
+                </div>
+                <div class="col-7">
+                  <div class="desc">
+                    <h3>إسم المشروع</h3>
+                    <p>يوضع هنا وصف عن الهيئة وقد يتكون من سطرين مثال هذا النص. يوضع هنا وصف عن الهيئة وقد يتكون من سطرين مثال هذا النص.يوضع هنا وصف عن الهيئة وقد يتكون من سطرين مثال هذا النص. يوضع هنا وصف عن الهيئة وقد يتكون من سطرين مثال هذا النص. يوضع هنا وصف عن الهيئة وقد يتكون من سطرين مثال هذا النص.يوضع هنا وصف عن الهيئة وقد يتكون من سطرين مثال هذا النص.</p>
+                    <a class="more-link" href="#">
+                      <span>المزيد</span>
+                      <img src="./images/icons/more-arrow.svg" alt="">
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="project">
+              <div class="row">
+                <div class="col-5">
+                  <div class="images">
+                    <img src="./images/IMG_4004.png" alt="">
+                    <img src="./images/IMG_4004.png" alt="">
+                  </div>
+                </div>
+                <div class="col-7">
+                  <div class="desc">
+                    <h3>إسم المشروع</h3>
+                    <p>يوضع هنا وصف عن الهيئة وقد يتكون من سطرين مثال هذا النص. يوضع هنا وصف عن الهيئة وقد يتكون من سطرين مثال هذا النص.يوضع هنا وصف عن الهيئة وقد يتكون من سطرين مثال هذا النص. يوضع هنا وصف عن الهيئة وقد يتكون من سطرين مثال هذا النص. يوضع هنا وصف عن الهيئة وقد يتكون من سطرين مثال هذا النص.يوضع هنا وصف عن الهيئة وقد يتكون من سطرين مثال هذا النص.</p>
+                    <a class="more-link" href="#">
+                      <span>المزيد</span>
+                      <img src="./images/icons/more-arrow.svg" alt="">
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="project">
+              <div class="row">
+                <div class="col-5">
+                  <div class="images">
+                    <img src="./images/IMG_4004.png" alt="">
+                    <img src="./images/IMG_4004.png" alt="">
+                  </div>
+                </div>
+                <div class="col-7">
+                  <div class="desc">
+                    <h3>إسم المشروع</h3>
+                    <p>يوضع هنا وصف عن الهيئة وقد يتكون من سطرين مثال هذا النص. يوضع هنا وصف عن الهيئة وقد يتكون من سطرين مثال هذا النص.يوضع هنا وصف عن الهيئة وقد يتكون من سطرين مثال هذا النص. يوضع هنا وصف عن الهيئة وقد يتكون من سطرين مثال هذا النص. يوضع هنا وصف عن الهيئة وقد يتكون من سطرين مثال هذا النص.يوضع هنا وصف عن الهيئة وقد يتكون من سطرين مثال هذا النص.</p>
+                    <a class="more-link" href="#">
+                      <span>المزيد</span>
+                      <img src="./images/icons/more-arrow.svg" alt="">
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="project">
+              <div class="row">
+                <div class="col-5">
+                  <div class="images">
+                    <img src="./images/IMG_4004.png" alt="">
+                    <img src="./images/IMG_4004.png" alt="">
+                  </div>
+                </div>
+                <div class="col-7">
+                  <div class="desc">
+                    <h3>إسم المشروع</h3>
+                    <p>يوضع هنا وصف عن الهيئة وقد يتكون من سطرين مثال هذا النص. يوضع هنا وصف عن الهيئة وقد يتكون من سطرين مثال هذا النص.يوضع هنا وصف عن الهيئة وقد يتكون من سطرين مثال هذا النص. يوضع هنا وصف عن الهيئة وقد يتكون من سطرين مثال هذا النص. يوضع هنا وصف عن الهيئة وقد يتكون من سطرين مثال هذا النص.يوضع هنا وصف عن الهيئة وقد يتكون من سطرين مثال هذا النص.</p>
+                    <a class="more-link" href="#">
+                      <span>المزيد</span>
+                      <img src="./images/icons/more-arrow.svg" alt="">
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <section class="media">
+      <div class="container">
+        <div class="head">
+          <h2 class="heading">المركز الإعلامي</h2>
+          <a class="more-link" href="#">
+            <span>المزيد</span>
+            <img src="./images/icons/more-arrow.svg" alt="">
+          </a>
+        </div>
+
+        <div class="slider">
+          <div class="slide">
+            <img src="./images/IMG_4004.png" alt="">
+          </div>
+          <div class="slide">
+            <img src="./images/IMG_4004.png" alt="">
+          </div>
+          <div class="slide">
+            <img src="./images/IMG_4004.png" alt="">
+          </div>
+          <div class="slide">
+            <img src="./images/IMG_4004.png" alt="">
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-5">
+            <div class="info">
+              <div class="logo">
+                <img src="./images/icons/logo.png" alt="">
+              </div>
+              <h2>عن الهيئة</h2>
+              <p>يوضع هنا وصف عن الهيئة وقد يتكون من سطرين مثال هذا النص. يوضع هنا وصف عن الهيئة وقد يتكون من سطرين مثال هذا النص.يوضع هنا وصفيوضع هنا وصف عن الهيئة وقد يتكون من سطرين مثال هذا النص….</p>
+              <h2>اتصل بنا 19022</h2>
+            </div>
+          </div>
+          <div class="col-7">
+            <div class="links">
+              <div class="row justify-content-center">
+                <div class="col-4">
+                  <div class="list">
+                    <h4>عن الهيئة</h4>
+                    <ul>
+                      <li><a href="#">المركز الإعلامي</a></li>
+                      <li><a href="#">أخبار الهيئة</a></li>
+                      <li><a href="#">المعرض</a></li>
+                      <li><a href="#">الخدمات</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-4">
+                  <div class="list">
+                    <h4>المشاريع</h4>
+                    <ul>
+                      <li><a href="#">الطرق</a></li>
+                      <li><a href="#">الكباري</a></li>
+                      <li><a href="#">المناطق</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <!-- <div class="row"> -->
+          <div class="copyright">
+            <div class="row justify-content-between">
+              <div class="col">
+                <div class="controls">
+                  <a href="#">شكاوي ومقترحات</a>
+                  <a href="#">الشروط والأحكام</a>
+                  <a href="#">سياسة الخصوصية</a>
+                </div>
+              </div>
+              <div class="col">
+                <div class="sign">
+                  <p>حقوق النشر محفوظة الهيئة العامة للطرق والكباري @ 2021</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        <!-- </div> -->
+      </div>
+    </section>
+    
 
 
 
@@ -78,6 +535,10 @@
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+
+    <script src="./styles/vendors/slick/slick.min.js"></script>
+
+    <script src="js/script.js"></script>
    
   </body>
 </html>

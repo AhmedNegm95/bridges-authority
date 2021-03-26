@@ -21,3 +21,56 @@
 
 // countDown1.Start(); //start countdown
 
+$(document).ready(function () {
+    
+    $('.welcome-slider .slider').slick({
+        rtl: true,
+        arrows: false,
+        dots: true
+    });
+
+    $('.statistics .slider').slick({
+        rtl: true,
+        arrows: false,
+        dots: false,
+        slidesToShow: 5,
+        // variableWidth: true,
+        // centerMode: true,
+        infinite: true,
+    });
+
+    $('.news-slider .slider').slick({
+        rtl: true,
+        arrows: false,
+        dots: true
+    });
+
+    $('.services .slider').slick({
+        rtl: true,
+        arrows: false,
+        dots: false,
+        slidesToShow: 3,
+        // variableWidth: true,
+        // centerMode: true,
+        infinite: true,
+    });
+
+    $('.projects .slider').slick({
+        rtl: true,
+        arrows: false,
+        dots: true,
+        // appendDots: '.projects .slider .slide .project .desc'
+    });
+
+    $('.media .slider').slick({
+        rtl: true,
+        arrows: false,
+        dots: false,
+        slidesToShow: 3,
+        // variableWidth: true,
+        // centerMode: true,
+        infinite: true,
+    });
+
+});
+
