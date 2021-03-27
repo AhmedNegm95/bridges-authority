@@ -37,6 +37,26 @@ $(document).ready(function () {
         // variableWidth: true,
         // centerMode: true,
         infinite: true,
+        responsive: [
+            {
+              breakpoint: 768,
+              settings: {
+                // arrows: false,
+                // centerMode: true,
+                // centerPadding: '40px',
+                slidesToShow: 2
+              }
+            },
+            {
+              breakpoint: 480,
+              settings: {
+                // arrows: false,
+                // centerMode: true,
+                // centerPadding: '40px',
+                slidesToShow: 1
+              }
+            }
+          ]
     });
 
     $('.news-slider .slider').slick({
@@ -53,6 +73,26 @@ $(document).ready(function () {
         // variableWidth: true,
         // centerMode: true,
         infinite: true,
+        responsive: [
+            {
+              breakpoint: 768,
+              settings: {
+                // arrows: false,
+                // centerMode: true,
+                // centerPadding: '40px',
+                slidesToShow: 2
+              }
+            },
+            {
+              breakpoint: 480,
+              settings: {
+                // arrows: false,
+                // centerMode: true,
+                // centerPadding: '40px',
+                slidesToShow: 1
+              }
+            }
+        ]
     });
 
     $('.projects .slider').slick({
@@ -70,7 +110,48 @@ $(document).ready(function () {
         // variableWidth: true,
         // centerMode: true,
         infinite: true,
+        responsive: [
+            {
+              breakpoint: 768,
+              settings: {
+                // arrows: false,
+                // centerMode: true,
+                // centerPadding: '40px',
+                slidesToShow: 2
+              }
+            },
+            {
+              breakpoint: 480,
+              settings: {
+                // arrows: false,
+                // centerMode: true,
+                // centerPadding: '40px',
+                slidesToShow: 1
+              }
+            }
+        ]
     });
 
 });
+
+$(function() {
+    // ------------------------------------------------------- //
+    // Multi Level dropdowns
+    // ------------------------------------------------------ //
+    $("ul.dropdown-menu [data-toggle='dropdown']").on("click", function(event) {
+      event.preventDefault();
+      event.stopPropagation();
+  
+      $(this).siblings().toggleClass("show");
+  
+  
+      if (!$(this).next().hasClass('show')) {
+        $(this).parents('.dropdown-menu').first().find('.show').removeClass("show");
+      }
+      $(this).parents('li.nav-item.dropdown.show').on('hidden.bs.dropdown', function(e) {
+        $('.dropdown-submenu .show').removeClass("show");
+      });
+  
+    });
+  });
 

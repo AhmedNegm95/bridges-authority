@@ -28,6 +28,32 @@ body {
 .btn:focus {
   box-shadow: none; }
 
+.dropdown-submenu {
+  position: relative; }
+
+.dropdown-submenu > a {
+  position: relative; }
+
+.dropdown-submenu > a:after {
+  content: "";
+  background-image: url(../../images/icons/dropdown.svg);
+  width: 1rem;
+  height: 1rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  vertical-align: middle;
+  transform: translateY(-50%) rotate(90deg);
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  border: none; }
+
+.dropdown-submenu > .dropdown-menu {
+  top: 0;
+  right: 100%;
+  margin-top: 0px;
+  margin-left: 0px; }
+
 .footer {
   padding-top: 100px;
   padding-bottom: 2rem;
@@ -72,6 +98,10 @@ body {
     .footer .copyright .sign {
       text-align: left;
       color: #323333; }
+      @media (max-width: 768px) {
+        .footer .copyright .sign {
+          text-align: unset;
+          margin-top: 2rem; } }
 
 .navbar .navbar-brand {
   margin-left: 2rem; }
@@ -81,10 +111,39 @@ body {
 .navbar .nav-item:not(:last-child) {
   margin-left: .5rem; }
 
+.navbar .nav-item.active .nav-link {
+  color: #016599;
+  font-weight: bold; }
+
 .navbar .nav-item .nav-link {
   color: #323333; }
+  @media (max-width: 768px) {
+    .navbar .nav-item .nav-link {
+      display: flex; } }
 
-.navbar .nav-item .dropdown-toggle::after {
+.navbar .nav-item .dropdown-item {
+  padding-left: 2rem;
+  padding-right: .5rem;
+  transition: padding .3s; }
+  .navbar .nav-item .dropdown-item:hover, .navbar .nav-item .dropdown-item:focus {
+    padding-right: 1rem;
+    background-color: #016599;
+    color: #FFF;
+    border-radius: 50px; }
+  .navbar .nav-item .dropdown-item:active, .navbar .nav-item .dropdown-item:link {
+    background-color: #FFF;
+    color: #323333; }
+
+.navbar .nav-item .dropdown-menu {
+  min-width: 14rem; }
+  .navbar .nav-item .dropdown-menu > li {
+    padding: 0 1rem; }
+    .navbar .nav-item .dropdown-menu > li.dropdown-submenu > .dropdown-item:hover, .navbar .nav-item .dropdown-menu > li.dropdown-submenu > .dropdown-item:focus {
+      padding-right: 1rem;
+      background-color: #FFF;
+      color: #016599; }
+
+.navbar .nav-item > .dropdown-toggle::after {
   border: none;
   background-image: url(../../images/icons/dropdown.svg);
   width: 1rem;
@@ -92,6 +151,14 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   vertical-align: middle; }
+  @media (max-width: 768px) {
+    .navbar .nav-item > .dropdown-toggle::after {
+      margin-right: auto;
+      align-self: center; } }
+
+@media (max-width: 768px) {
+  .navbar .login {
+    margin-top: 1rem; } }
 
 .navbar .login .login-btn {
   background-color: #016599;
@@ -149,6 +216,10 @@ body {
     justify-content: center;
     flex-direction: column;
     color: #FFF; }
+    @media (max-width: 576px) {
+      .welcome-slider .slider .slide .overlay h1 {
+        font-size: 1.5rem;
+        font-weight: bold; } }
 
 .welcome-slider .slider .slick-dots {
   bottom: 200px; }
@@ -186,6 +257,9 @@ body {
   .about .images-container {
     display: flex;
     justify-content: flex-end; }
+    @media (max-width: 768px) {
+      .about .images-container {
+        margin-top: 2rem; } }
     .about .images-container .images {
       position: relative; }
       .about .images-container .images > img {
@@ -193,18 +267,26 @@ body {
         .about .images-container .images > img:first-child {
           width: 420px;
           height: 250px; }
-          .about .images-container .images > img:first-child:hover {
-            position: relative;
-            z-index: 5; }
+          @media (max-width: 576px) {
+            .about .images-container .images > img:first-child {
+              width: 100%; } }
         .about .images-container .images > img:nth-child(2) {
           width: 280px;
           height: 200px;
           position: absolute;
           top: 45%;
           left: 42.5%; }
+          @media (max-width: 576px) {
+            .about .images-container .images > img:nth-child(2) {
+              left: 50%;
+              top: 60%;
+              transform: translateX(-50%); } }
       .about .images-container .images .logo {
         display: flex;
         justify-content: flex-end; }
+        @media (max-width: 576px) {
+          .about .images-container .images .logo {
+            display: none; } }
         .about .images-container .images .logo img {
           width: 178px;
           margin-top: .5rem; }
@@ -214,6 +296,9 @@ body {
   min-height: 600px;
   margin-top: 6rem;
   padding-top: 130px; }
+  @media (max-width: 576px) {
+    .statistics {
+      margin-top: 8rem; } }
   .statistics h2 {
     color: #FFF; }
   .statistics .slider {
@@ -261,9 +346,7 @@ body {
     .latest-news .news-slider .slider .slick-dots {
       bottom: -100px;
       right: -30px;
-      display: flex;
-      flex-direction: row-reverse;
-      justify-content: flex-end; }
+      display: flex; }
       .latest-news .news-slider .slider .slick-dots li {
         margin: 0; }
         .latest-news .news-slider .slider .slick-dots li button::before {
@@ -349,15 +432,22 @@ body {
         .projects .slider .slide .project .images img:first-child {
           width: 90%;
           height: 280px; }
-          .projects .slider .slide .project .images img:first-child:hover {
-            position: relative;
-            z-index: 5; }
+          @media (max-width: 576px) {
+            .projects .slider .slide .project .images img:first-child {
+              width: 100%; } }
         .projects .slider .slide .project .images img:last-child {
           position: absolute;
           top: 55%;
           left: 40%;
           width: 300px;
           height: 200px; }
+          @media (max-width: 576px) {
+            .projects .slider .slide .project .images img:last-child {
+              left: 50%;
+              transform: translateX(-50%); } }
+    @media (max-width: 768px) {
+      .projects .slider .slide .project .desc {
+        margin-top: 7rem; } }
     .projects .slider .slide .project .desc h3 {
       font-weight: bold; }
     .projects .slider .slide .project .desc p {

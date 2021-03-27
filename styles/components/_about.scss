@@ -18,6 +18,11 @@
         display: flex;
         justify-content: flex-end;
         // position: relative;
+        
+        @media(max-width: 768px) {
+            margin-top: 2rem;
+        }
+
         .images {
             position: relative;
 
@@ -28,10 +33,14 @@
                     width: 420px;
                     height: 250px;
 
-                    &:hover {
-                        position: relative;
-                        z-index: 5;
+                    @media(max-width: 576px) {
+                        width: 100%;
                     }
+
+                    // &:hover {
+                    //     position: relative;
+                    //     z-index: 5;
+                    // }
                 }
 
                 &:nth-child(2) {
@@ -40,6 +49,13 @@
                     position: absolute;
                     top: 45%;
                     left: 42.5%;
+
+                    @media(max-width: 576px) {
+                        left: 50%;
+                        top: 60%;
+                        transform: translateX(-50%);
+                    }
+
                 }
 
             }
@@ -47,6 +63,11 @@
             .logo {
                 display: flex;
                 justify-content: flex-end;
+
+        
+                @media(max-width: 576px) {
+                    display: none;
+                }
 
                 img {
                     width: 178px;

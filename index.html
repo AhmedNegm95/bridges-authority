@@ -40,17 +40,42 @@
           <ul class="navbar-nav mr-auto">
 
 
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                عن الهيئة
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Something else here</a>
-              </div>
+            <!-- Level one dropdown -->
+            <li class="nav-item dropdown active">
+              <a id="dropdownMenu1" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle">عن الهيئة</a>
+              <ul aria-labelledby="dropdownMenu1" class="dropdown-menu border-0 shadow">
+                <li><a href="#" class="dropdown-item"> الطرق </a></li>
+                <li><a href="#" class="dropdown-item">الكباري</a></li>
+
+                <!-- <li class="dropdown-divider"></li> -->
+
+                <!-- Level two dropdown-->
+                <li class="dropdown-submenu">
+                  <a id="dropdownMenu2" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-item dropdown-toggle"> الطرق</a>
+                  <ul aria-labelledby="dropdownMenu2" class="dropdown-menu border-0 shadow">
+                    <li>
+                      <a tabindex="-1" href="#" class="dropdown-item">السلامة على الطريق</a>
+                    </li>
+
+                    <!-- Level three dropdown-->
+                    <!-- <li class="dropdown-submenu">
+                      <a id="dropdownMenu3" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-item dropdown-toggle">level 2</a>
+                      <ul aria-labelledby="dropdownMenu3" class="dropdown-menu border-0 shadow">
+                        <li><a href="#" class="dropdown-item">3rd level</a></li>
+                        <li><a href="#" class="dropdown-item">3rd level</a></li>
+                      </ul>
+                    </li> -->
+                    <!-- End Level three -->
+
+                    <li><a href="#" class="dropdown-item">الطرق السريعة</a></li>
+                    <li><a href="#" class="dropdown-item">المشروع القومي للطرق</a></li>
+                  </ul>
+                </li>
+                <!-- End Level two -->
+              </ul>
             </li>
+            <!-- End Level one -->
+
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 المشاريع
@@ -148,7 +173,7 @@
     <section class="about">
       <div class="container">
         <div class="row">
-          <div class="col-7">
+          <div class="col-12 col-md-7">
             <div class="desc">
               <h2 class="heading">عن الهيئة</h2>
               <p>يوضع هنا وصف عن الهيئة وقد يتكون من سطرين مثال هذا النص. يوضع هنا وصف عن الهيئة وقد يتكون من سطرين مثال هذا النص.يوضع هنا وصف عن الهيئة وقد يتكون من سطرين مثال هذا النص. يوضع هنا وصف عن الهيئة وقد يتكون من سطرين مثال هذا النص. يوضع هنا وصف عن الهيئة وقد يتكون من سطرين مثال هذا النص.يوضع هنا وصف عن الهيئة وقد يتكون من سطرين مثال هذا النص.</p>
@@ -158,7 +183,7 @@
               </a>
             </div>
           </div>
-          <div class="col-5">
+          <div class="col-12 col-md-5">
             <div class="images-container">
               <div class="images">
                 <img src="./images/background.jpg" alt="">
@@ -216,7 +241,7 @@
         <h2 class="heading">أحدث الأخبار</h2>
 
         <div class="row">
-          <div class="col-7">
+          <div class="col-12 col-md-7">
             <div class="news-slider">
               <div class="slider">
 
@@ -264,7 +289,7 @@
               </div>
             </div>
           </div>
-          <div class="col-5">
+          <div class="col-12 col-md-5">
             <div class="details">
               <div class="single-news">
                 <img src="./images/IMG_4004.png" alt="">
@@ -343,13 +368,13 @@
           <div class="slide">
             <div class="project">
               <div class="row">
-                <div class="col-5">
+                <div class="col-12 col-md-5">
                   <div class="images">
                     <img src="./images/IMG_4004.png" alt="">
                     <img src="./images/IMG_4004.png" alt="">
                   </div>
                 </div>
-                <div class="col-7">
+                <div class="col-12 col-md-7">
                   <div class="desc">
                     <h3>إسم المشروع</h3>
                     <p>يوضع هنا وصف عن الهيئة وقد يتكون من سطرين مثال هذا النص. يوضع هنا وصف عن الهيئة وقد يتكون من سطرين مثال هذا النص.يوضع هنا وصف عن الهيئة وقد يتكون من سطرين مثال هذا النص. يوضع هنا وصف عن الهيئة وقد يتكون من سطرين مثال هذا النص. يوضع هنا وصف عن الهيئة وقد يتكون من سطرين مثال هذا النص.يوضع هنا وصف عن الهيئة وقد يتكون من سطرين مثال هذا النص.</p>
@@ -365,13 +390,13 @@
           <div class="slide">
             <div class="project">
               <div class="row">
-                <div class="col-5">
+                <div class="col-12 col-md-5">
                   <div class="images">
                     <img src="./images/IMG_4004.png" alt="">
                     <img src="./images/IMG_4004.png" alt="">
                   </div>
                 </div>
-                <div class="col-7">
+                <div class="col-12 col-md-7">
                   <div class="desc">
                     <h3>إسم المشروع</h3>
                     <p>يوضع هنا وصف عن الهيئة وقد يتكون من سطرين مثال هذا النص. يوضع هنا وصف عن الهيئة وقد يتكون من سطرين مثال هذا النص.يوضع هنا وصف عن الهيئة وقد يتكون من سطرين مثال هذا النص. يوضع هنا وصف عن الهيئة وقد يتكون من سطرين مثال هذا النص. يوضع هنا وصف عن الهيئة وقد يتكون من سطرين مثال هذا النص.يوضع هنا وصف عن الهيئة وقد يتكون من سطرين مثال هذا النص.</p>
@@ -387,13 +412,13 @@
           <div class="slide">
             <div class="project">
               <div class="row">
-                <div class="col-5">
+                <div class="col-12 col-md-5">
                   <div class="images">
                     <img src="./images/IMG_4004.png" alt="">
                     <img src="./images/IMG_4004.png" alt="">
                   </div>
                 </div>
-                <div class="col-7">
+                <div class="col-12 col-md-7">
                   <div class="desc">
                     <h3>إسم المشروع</h3>
                     <p>يوضع هنا وصف عن الهيئة وقد يتكون من سطرين مثال هذا النص. يوضع هنا وصف عن الهيئة وقد يتكون من سطرين مثال هذا النص.يوضع هنا وصف عن الهيئة وقد يتكون من سطرين مثال هذا النص. يوضع هنا وصف عن الهيئة وقد يتكون من سطرين مثال هذا النص. يوضع هنا وصف عن الهيئة وقد يتكون من سطرين مثال هذا النص.يوضع هنا وصف عن الهيئة وقد يتكون من سطرين مثال هذا النص.</p>
@@ -409,13 +434,13 @@
           <div class="slide">
             <div class="project">
               <div class="row">
-                <div class="col-5">
+                <div class="col-12 col-md-5">
                   <div class="images">
                     <img src="./images/IMG_4004.png" alt="">
                     <img src="./images/IMG_4004.png" alt="">
                   </div>
                 </div>
-                <div class="col-7">
+                <div class="col-12 col-md-7">
                   <div class="desc">
                     <h3>إسم المشروع</h3>
                     <p>يوضع هنا وصف عن الهيئة وقد يتكون من سطرين مثال هذا النص. يوضع هنا وصف عن الهيئة وقد يتكون من سطرين مثال هذا النص.يوضع هنا وصف عن الهيئة وقد يتكون من سطرين مثال هذا النص. يوضع هنا وصف عن الهيئة وقد يتكون من سطرين مثال هذا النص. يوضع هنا وصف عن الهيئة وقد يتكون من سطرين مثال هذا النص.يوضع هنا وصف عن الهيئة وقد يتكون من سطرين مثال هذا النص.</p>
@@ -465,7 +490,7 @@
     <section class="footer">
       <div class="container">
         <div class="row">
-          <div class="col-5">
+          <div class="col-12 col-md-5">
             <div class="info">
               <div class="logo">
                 <img src="./images/icons/logo.png" alt="">
@@ -475,9 +500,9 @@
               <h2>اتصل بنا 19022</h2>
             </div>
           </div>
-          <div class="col-7">
+          <div class="col-12 col-md-7">
             <div class="links">
-              <div class="row justify-content-center">
+              <div class="row justify-content-md-center">
                 <div class="col-4">
                   <div class="list">
                     <h4>عن الهيئة</h4>
@@ -507,14 +532,14 @@
         <!-- <div class="row"> -->
           <div class="copyright">
             <div class="row justify-content-between">
-              <div class="col">
+              <div class="col-12 col-md-6">
                 <div class="controls">
                   <a href="#">شكاوي ومقترحات</a>
                   <a href="#">الشروط والأحكام</a>
                   <a href="#">سياسة الخصوصية</a>
                 </div>
               </div>
-              <div class="col">
+              <div class="col-12 col-md-6">
                 <div class="sign">
                   <p>حقوق النشر محفوظة الهيئة العامة للطرق والكباري @ 2021</p>
                 </div>
@@ -525,9 +550,6 @@
         <!-- </div> -->
       </div>
     </section>
-    
-
-
 
 
     <!-- Optional JavaScript -->
