@@ -483,3 +483,245 @@ body {
       margin: 0 .5rem; }
       .media .slider .slide img {
         width: 100%; }
+
+@media (max-width: 992px) {
+  .leaders .boxes {
+    transform: scale(0.5); } }
+
+.leaders .boxes .box {
+  width: 200px;
+  padding: 10px;
+  border: 1px solid #323333;
+  border-radius: 4px;
+  display: flex;
+  position: relative; }
+  .leaders .boxes .box img {
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 50%;
+    object-fit: cover; }
+  .leaders .boxes .box .desc {
+    margin-right: 1rem; }
+    .leaders .boxes .box .desc p {
+      font-size: 1rem;
+      font-weight: bold; }
+    .leaders .boxes .box .desc span {
+      font-size: .9rem; }
+  .leaders .boxes .box.bottom-line::after {
+    content: "";
+    width: 1px;
+    height: 3rem;
+    background-color: #323333;
+    position: absolute;
+    top: 100%;
+    left: 50%; }
+  .leaders .boxes .box.up-line::before {
+    content: "";
+    width: 1px;
+    height: 3rem;
+    background-color: #323333;
+    position: absolute;
+    bottom: 100%;
+    left: 50%; }
+
+.leaders .boxes .level.level-1 .box {
+  margin: 0 auto; }
+
+.leaders .boxes .level.level-2 {
+  border-top: 1px solid #323333;
+  margin: 0 auto;
+  margin-top: calc(3rem - 1px);
+  margin-bottom: calc(3rem - 5px);
+  width: 65%;
+  position: relative;
+  min-height: 185px; }
+  .leaders .boxes .level.level-2 .box {
+    position: absolute;
+    top: calc(3rem - 2px);
+    transform: translateX(50%); }
+    .leaders .boxes .level.level-2 .box.box-1 {
+      right: 0; }
+    .leaders .boxes .level.level-2 .box.box-2 {
+      right: 30%; }
+    .leaders .boxes .level.level-2 .box.box-3 {
+      right: 70%; }
+    .leaders .boxes .level.level-2 .box.box-4 {
+      right: 100%; }
+
+.leaders .boxes .level.level-3 {
+  margin: 0 auto;
+  width: 65%;
+  min-height: 100px;
+  position: relative; }
+  .leaders .boxes .level.level-3 .box-group {
+    display: flex;
+    position: absolute;
+    transform: translateX(50%); }
+    .leaders .boxes .level.level-3 .box-group::before {
+      content: "";
+      width: 52.2%;
+      height: 1px;
+      background-color: #323333;
+      position: absolute;
+      top: -3rem;
+      right: 99px; }
+    .leaders .boxes .level.level-3 .box-group .box.box-1 {
+      margin-left: 1rem; }
+    .leaders .boxes .level.level-3 .box-group.group-1 {
+      right: 0; }
+    .leaders .boxes .level.level-3 .box-group.group-2 {
+      right: 70%; }
+
+.history .milestones {
+  margin-top: 250px; }
+  @media (max-width: 992px) {
+    .history .milestones {
+      transform: rotate(-90deg);
+      margin-top: 400px;
+      margin-bottom: 1000px; } }
+  .history .milestones .circles-line {
+    padding: .3rem 3rem;
+    border-radius: 20px;
+    background-color: rgba(107, 132, 194, 0.2);
+    position: relative; }
+    @media (max-width: 992px) {
+      .history .milestones .circles-line {
+        width: 1200px; } }
+    .history .milestones .circles-line .dotted-line {
+      border-top: 7px dotted #6b84c2; }
+    .history .milestones .circles-line .circle {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%); }
+      .history .milestones .circles-line .circle.milestone-circle-1 {
+        right: 10%; }
+      .history .milestones .circles-line .circle.milestone-circle-2 {
+        right: 20%; }
+      .history .milestones .circles-line .circle.milestone-circle-3 {
+        right: 30%; }
+      .history .milestones .circles-line .circle.milestone-circle-4 {
+        right: 40%; }
+      .history .milestones .circles-line .circle.milestone-circle-5 {
+        right: 50%; }
+      .history .milestones .circles-line .circle.milestone-circle-6 {
+        right: 60%; }
+      .history .milestones .circles-line .circle.milestone-circle-7 {
+        right: 70%; }
+      .history .milestones .circles-line .circle span {
+        border-radius: 50%;
+        display: inline-block;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+        .history .milestones .circles-line .circle span.circle-5 {
+          width: 1rem;
+          height: 1rem;
+          background-color: #ffca00; }
+        .history .milestones .circles-line .circle span.circle-4 {
+          width: 2rem;
+          height: 2rem;
+          background-color: #FFF; }
+        .history .milestones .circles-line .circle span.circle-3 {
+          width: 2.5rem;
+          height: 2.5rem;
+          background-color: #016599; }
+        .history .milestones .circles-line .circle span.circle-2 {
+          width: 2.8rem;
+          height: 2.8rem;
+          background-color: #ffca00; }
+        .history .milestones .circles-line .circle span.circle-1 {
+          width: 3.3rem;
+          height: 3.3rem;
+          background-color: #016599; }
+      .history .milestones .circles-line .circle .desc {
+        position: absolute;
+        right: 1rem;
+        display: flex;
+        min-width: 245px; }
+        .history .milestones .circles-line .circle .desc.up {
+          transform: translateY(-100%); }
+          .history .milestones .circles-line .circle .desc.up .arrow img {
+            transform: rotate(0deg); }
+          .history .milestones .circles-line .circle .desc.up .arrow .label {
+            margin-bottom: .5rem; }
+          .history .milestones .circles-line .circle .desc.up .text {
+            margin-top: 5rem; }
+        .history .milestones .circles-line .circle .desc .arrow {
+          display: flex;
+          flex-direction: column;
+          align-items: center; }
+          .history .milestones .circles-line .circle .desc .arrow img {
+            height: 150px;
+            transform: rotate(180deg); }
+          .history .milestones .circles-line .circle .desc .arrow .label {
+            background-color: #ffca00;
+            padding: .2rem 1.2rem;
+            border-radius: 20px;
+            color: #016599;
+            font-weight: bold;
+            font-size: 1.2rem;
+            margin-top: .5rem; }
+        .history .milestones .circles-line .circle .desc .text {
+          margin-top: 2rem; }
+          .history .milestones .circles-line .circle .desc .text p {
+            margin-bottom: 0; }
+
+.about-page {
+  background-color: #f8f8f9; }
+  .about-page .desc-part {
+    background-color: #FFF;
+    padding-bottom: 10rem;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 55% 98%, 45% 98%, 0% 90%); }
+    .about-page .desc-part .role {
+      margin-top: 4rem; }
+      .about-page .desc-part .role h2 {
+        margin-bottom: 2rem; }
+      .about-page .desc-part .role .content {
+        padding-right: 2rem; }
+      .about-page .desc-part .role img {
+        width: 100%;
+        height: 200px; }
+      .about-page .desc-part .role p {
+        font-size: 1.35rem; }
+    .about-page .desc-part .word {
+      margin-top: 4rem; }
+      .about-page .desc-part .word h2 {
+        margin-bottom: 2rem; }
+      .about-page .desc-part .word h4 {
+        font-weight: bold; }
+      .about-page .desc-part .word .content {
+        padding-right: 2rem; }
+      .about-page .desc-part .word img {
+        width: 100%;
+        height: 230px;
+        border-radius: 6px; }
+      .about-page .desc-part .word p {
+        font-size: 1.35rem; }
+  .about-page .history {
+    margin-top: 4rem; }
+  .about-page .leaders {
+    margin-top: 300px; }
+    .about-page .leaders .boxes {
+      margin-top: 4rem; }
+  .about-page .organization {
+    margin-top: 6rem; }
+    .about-page .organization .single-card {
+      background-color: #FFF;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      min-height: 350px;
+      padding: 1rem;
+      margin-top: 2rem; }
+      .about-page .organization .single-card img {
+        width: 8rem;
+        height: 8rem;
+        border-radius: 50%;
+        border: 1px solid #323333; }
+      .about-page .organization .single-card h4 {
+        margin-top: 1rem;
+        font-weight: bold; }
+      .about-page .organization .single-card p {
+        margin-top: .5rem; }

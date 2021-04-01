@@ -23,9 +23,13 @@
 @import 'components/services';
 @import 'components/projects';
 @import 'components/media';
+    //About
+@import 'components/leaders';
+@import 'components/history';
 
 // 6. Page-specific styles
 @import "pages/home";
+@import 'pages/about';
 
 // 7. Themes
 @import "themes/default";
