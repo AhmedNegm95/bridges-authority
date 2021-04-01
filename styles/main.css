@@ -725,3 +725,27 @@ body {
         font-weight: bold; }
       .about-page .organization .single-card p {
         margin-top: .5rem; }
+
+.contact-page {
+  background-color: #f8f8f9;
+  padding: 4rem 0; }
+  .contact-page .contact-form {
+    padding: 1.5rem;
+    background-color: #FFF;
+    margin-top: 2rem;
+    border-radius: 6px; }
+    .contact-page .contact-form label {
+      font-weight: bold; }
+    .contact-page .contact-form input::placeholder,
+    .contact-page .contact-form textarea::placeholder {
+      color: #bfbfbf;
+      font-size: 1.1rem; }
+    .contact-page .contact-form .send-btn {
+      margin-top: 3rem; }
+      .contact-page .contact-form .send-btn .btn {
+        background-color: #016599;
+        color: #FFF;
+        width: 100%;
+        padding: 1rem 0;
+        border-radius: 50px;
+        font-weight: bold; }
