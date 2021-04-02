@@ -1,0 +1,31 @@
+.bridges-page {
+    background-color: $color-white-smoke;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+
+    h2 {
+        margin-top: 2rem;
+    }
+
+    .nav-tabs {
+        border: none;
+        margin-top: 3rem;
+
+        .nav-item {
+
+            .nav-link {
+                border: none;
+                padding: 1rem 2rem;
+                color: $color-secondary;
+                font-weight: bold;
+
+                &.active {
+                    background-color: $color-primary;
+                    color: $color-white;
+                    border-radius: 30px;
+                    font-weight: normal;
+                }
+            }
+        }
+    }
+}

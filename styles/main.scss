@@ -11,7 +11,7 @@
 @import "base/base", "base/fonts", "base/typography", "base/helpers";
 
 // 4. Layout-related sections
-@import "layout/header", "layout/footer", "layout/navbar";
+@import "layout/header", "layout/footer", "layout/navbar", "layout/breadcrumb";
 
 // 5. Components
 @import 'components/countdown';
@@ -33,6 +33,7 @@
 @import 'pages/contact';
 @import 'pages/tenders';
 @import 'pages/tenders-details';
+@import 'pages/bridges';
 
 // 7. Themes
 @import "themes/default";
