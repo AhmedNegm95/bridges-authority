@@ -774,3 +774,57 @@ body {
     .tenders-page .tender p {
       margin-top: 1rem;
       font-size: 1.1rem; }
+
+.tenders-details-page {
+  background-color: #f5f5f5;
+  padding-top: 4rem;
+  padding-bottom: 2rem; }
+  .tenders-details-page .single-tender {
+    padding: 1rem 2rem 2rem;
+    background-color: #FFF;
+    border-radius: 8px; }
+    .tenders-details-page .single-tender .time {
+      color: #bfbfbf;
+      font-size: .9rem;
+      margin-top: 1rem; }
+      .tenders-details-page .single-tender .time img {
+        height: 1rem; }
+    .tenders-details-page .single-tender .conditions {
+      margin-top: 2rem; }
+      .tenders-details-page .single-tender .conditions h4 {
+        font-weight: bold; }
+    .tenders-details-page .single-tender .desc {
+      margin-top: 1rem;
+      font-size: 1.1rem; }
+      .tenders-details-page .single-tender .desc .share {
+        margin-top: 2rem;
+        display: flex;
+        align-items: center; }
+        .tenders-details-page .single-tender .desc .share span {
+          font-size: .9rem;
+          font-weight: bold; }
+        .tenders-details-page .single-tender .desc .share .icons {
+          margin-right: 1rem; }
+          .tenders-details-page .single-tender .desc .share .icons img {
+            height: 1.5rem; }
+            .tenders-details-page .single-tender .desc .share .icons img:not(:last-child) {
+              margin-left: 1rem; }
+  .tenders-details-page .attachments {
+    margin-top: 2rem; }
+    .tenders-details-page .attachments h3 {
+      font-weight: bold; }
+    .tenders-details-page .attachments .files {
+      display: flex;
+      flex-wrap: wrap; }
+      .tenders-details-page .attachments .files .file {
+        display: flex;
+        align-items: center;
+        padding: 1rem;
+        padding-left: 3rem;
+        background-color: #FFF;
+        border-radius: 8px; }
+        .tenders-details-page .attachments .files .file img {
+          height: 3rem;
+          margin-left: 1rem; }
+        .tenders-details-page .attachments .files .file:not(:last-child) {
+          margin-left: 1rem; }
