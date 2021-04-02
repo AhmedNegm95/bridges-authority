@@ -14,6 +14,8 @@
 @import "layout/header", "layout/footer", "layout/navbar", "layout/breadcrumb";
 
 // 5. Components
+@import 'components/tabs';
+
 @import 'components/countdown';
 @import 'components/welcome-slider';
 @import 'components/about';
@@ -35,6 +37,8 @@
 @import 'pages/tenders-details';
 @import 'pages/bridges';
 @import 'pages/bridges-projects';
+@import 'pages/road-safety';
+@import 'pages/highways';
 
 // 7. Themes
 @import "themes/default";

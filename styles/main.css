@@ -196,6 +196,19 @@ body {
   .breadcrumb .active {
     font-weight: bold; }
 
+.nav-tabs {
+  border: none; }
+  .nav-tabs .nav-item .nav-link {
+    border: none;
+    padding: 1rem 2rem;
+    color: #323333;
+    font-weight: bold; }
+    .nav-tabs .nav-item .nav-link.active {
+      background-color: #016599;
+      color: #FFF;
+      border-radius: 30px;
+      font-weight: normal; }
+
 .counter {
   width: 100vw;
   height: 100vh;
@@ -866,18 +879,7 @@ body {
   .bridges-page h2 {
     margin-top: 2rem; }
   .bridges-page .nav-tabs {
-    border: none;
     margin-top: 3rem; }
-    .bridges-page .nav-tabs .nav-item .nav-link {
-      border: none;
-      padding: 1rem 2rem;
-      color: #323333;
-      font-weight: bold; }
-      .bridges-page .nav-tabs .nav-item .nav-link.active {
-        background-color: #016599;
-        color: #FFF;
-        border-radius: 30px;
-        font-weight: normal; }
 
 .bridges-projects-page {
   background-color: #f5f5f5;
@@ -903,3 +905,68 @@ body {
         margin-left: 4rem; }
     .bridges-projects-page .bridges-projects .bridges-project .info {
       margin-top: 1.5rem; }
+
+.road-safety {
+  background-color: #f5f5f5;
+  padding-bottom: 2rem; }
+  .road-safety h2 {
+    margin-top: 1rem;
+    margin-bottom: 1rem; }
+  .road-safety .signs .sign {
+    margin-top: 1rem;
+    background-color: #FFF;
+    padding: 1rem;
+    border-radius: 8px; }
+    .road-safety .signs .sign img {
+      height: 180px; }
+    .road-safety .signs .sign h5 {
+      margin-top: 1rem;
+      font-weight: bold; }
+
+.highways-page {
+  background-color: #f5f5f5;
+  padding-bottom: 2rem; }
+  .highways-page h2 {
+    margin-top: 1rem;
+    margin-bottom: 1rem; }
+  .highways-page .nav-tabs {
+    margin-top: 3rem; }
+  .highways-page .tab-content {
+    padding-top: 1rem; }
+    .highways-page .tab-content .loads .load {
+      background-color: #FFF;
+      margin-top: 1.5rem;
+      padding: 2rem 1rem;
+      border-radius: 8px; }
+      .highways-page .tab-content .loads .load img {
+        width: 100%; }
+      .highways-page .tab-content .loads .load h4 {
+        font-weight: bold;
+        margin-bottom: 1.5rem; }
+      .highways-page .tab-content .loads .load p {
+        margin-bottom: .5rem;
+        font-size: 1.1rem; }
+    .highways-page .tab-content .stations .station {
+      padding: 2rem;
+      background-color: #FFF;
+      border-radius: 8px;
+      margin-top: 1rem; }
+      .highways-page .tab-content .stations .station h3, .highways-page .tab-content .stations .station h5 {
+        font-weight: bold; }
+      .highways-page .tab-content .stations .station .location {
+        font-size: 1.1rem;
+        margin-top: 1rem; }
+      .highways-page .tab-content .stations .station .subscription .type,
+      .highways-page .tab-content .stations .station .price .type {
+        margin-top: 1rem; }
+        .highways-page .tab-content .stations .station .subscription .type .badge,
+        .highways-page .tab-content .stations .station .price .type .badge {
+          font-weight: normal;
+          font-size: 1rem;
+          border: 1px solid #e8e8e8;
+          padding: .7rem 1rem; }
+          .highways-page .tab-content .stations .station .subscription .type .badge:not(:last-of-type),
+          .highways-page .tab-content .stations .station .price .type .badge:not(:last-of-type) {
+            margin-left: .5rem; }
+      .highways-page .tab-content .stations .station .price {
+        margin-top: 1rem; }
