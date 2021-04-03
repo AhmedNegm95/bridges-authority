@@ -970,3 +970,33 @@ body {
             margin-left: .5rem; }
       .highways-page .tab-content .stations .station .price {
         margin-top: 1rem; }
+
+.faq-page {
+  background-color: #f8f8f9;
+  padding-top: 2rem;
+  padding-bottom: 2rem; }
+  .faq-page .accordion {
+    color: #323333; }
+    .faq-page .accordion .question {
+      background-color: #FFF;
+      margin-top: 1rem;
+      padding: 2rem 1.5rem;
+      border-radius: 8px; }
+      .faq-page .accordion .question .head .btn {
+        color: #323333;
+        font-weight: bold;
+        font-size: 1.1rem;
+        padding: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center; }
+        .faq-page .accordion .question .head .btn:focus, .faq-page .accordion .question .head .btn:hover {
+          text-decoration: none; }
+        .faq-page .accordion .question .head .btn img {
+          width: 1rem; }
+      .faq-page .accordion .question .content {
+        margin-top: 1rem;
+        font-size: 1.1rem; }
+
+.rotate {
+  transform: rotate(180deg); }

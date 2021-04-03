@@ -131,6 +131,13 @@ $(document).ready(function () {
             }
         ]
     });
+  
+  
+  //toggle arrow rotation of FAQ page
+  $('.question .head .btn').click(function () {
+    $(this).children('img').toggleClass('rotate')
+  })
+  
 
 });
 
