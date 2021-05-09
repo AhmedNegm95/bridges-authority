@@ -784,7 +784,7 @@ body {
       color: #bfbfbf;
       font-size: 1.1rem; }
     .contact-page .contact-form .send-btn {
-      margin-top: 3rem; }
+      margin-top: 1rem; }
       .contact-page .contact-form .send-btn .btn {
         background-color: #016599;
         color: #FFF;
@@ -804,6 +804,7 @@ body {
     margin-top: 1.5rem; }
     .tenders-page .tender .head {
       display: flex;
+      flex-wrap: wrap;
       justify-content: space-between;
       align-items: center; }
       .tenders-page .tender .head h3 {
@@ -812,6 +813,9 @@ body {
       .tenders-page .tender .head .time {
         color: #bfbfbf;
         font-size: .9rem; }
+        @media (max-width: 768px) {
+          .tenders-page .tender .head .time {
+            margin-top: .5rem; } }
         .tenders-page .tender .head .time img {
           height: 1rem; }
     .tenders-page .tender p {
@@ -865,7 +869,8 @@ body {
         padding: 1rem;
         padding-left: 3rem;
         background-color: #FFF;
-        border-radius: 8px; }
+        border-radius: 8px;
+        margin-top: 1rem; }
         .tenders-details-page .attachments .files .file img {
           height: 3rem;
           margin-left: 1rem; }
@@ -898,8 +903,12 @@ body {
       border-radius: 8px; }
     .bridges-projects-page .bridges-projects .bridges-project h3 {
       font-weight: bold; }
+      @media (max-width: 768px) {
+        .bridges-projects-page .bridges-projects .bridges-project h3 {
+          margin-top: 1rem; } }
     .bridges-projects-page .bridges-projects .bridges-project .desc {
       display: flex;
+      flex-wrap: wrap;
       margin-top: 2rem; }
       .bridges-projects-page .bridges-projects .bridges-project .desc > div:not(:last-child) {
         margin-left: 4rem; }
