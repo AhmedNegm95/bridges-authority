@@ -142,6 +142,9 @@ body {
       padding-right: 1rem;
       background-color: #FFF;
       color: #016599; }
+    .navbar .nav-item .dropdown-menu > li.dropdown-submenu > .dropdown-item:link, .navbar .nav-item .dropdown-menu > li.dropdown-submenu > .dropdown-item:visited {
+      background-color: #FFF;
+      color: #016599; }
 
 .navbar .nav-item > .dropdown-toggle::after {
   border: none;
@@ -968,12 +971,16 @@ body {
       .highways-page .tab-content .stations .station .subscription .type,
       .highways-page .tab-content .stations .station .price .type {
         margin-top: 1rem; }
+        .highways-page .tab-content .stations .station .subscription .type h6,
+        .highways-page .tab-content .stations .station .price .type h6 {
+          margin-bottom: 0; }
         .highways-page .tab-content .stations .station .subscription .type .badge,
         .highways-page .tab-content .stations .station .price .type .badge {
           font-weight: normal;
           font-size: 1rem;
           border: 1px solid #e8e8e8;
-          padding: .7rem 1rem; }
+          padding: .7rem 1rem;
+          margin-top: .5rem; }
           .highways-page .tab-content .stations .station .subscription .type .badge:not(:last-of-type),
           .highways-page .tab-content .stations .station .price .type .badge:not(:last-of-type) {
             margin-left: .5rem; }

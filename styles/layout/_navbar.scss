@@ -72,6 +72,12 @@
                             // border-radius: 50px;
                         }
 
+                        &:link,
+                        &:visited {
+                            background-color: $color-white;
+                            color: $color-primary;
+                        }
+
                     }
                 }
             }
