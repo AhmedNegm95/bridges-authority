@@ -1,0 +1,39 @@
+.confirm-code-page {
+    background-color: $color-white-ghost;
+    padding: 4rem 0;
+
+    p.desc {
+        color: $color-gray-light;
+    }
+
+    .codes {
+        display: flex;
+        justify-content: center;
+
+        input {
+            width: 3rem;
+            border: none;
+            border-bottom: 1px solid red;
+
+            &:not(:last-child) {
+                margin-left: 1rem;
+            }
+
+            &:active,
+            &:focus {
+                outline: none;
+            }
+        }
+    }
+
+    p.message {
+        color: $color-gray-light;
+        margin-top: 1.5rem;
+        margin-bottom: 0;
+    }
+
+    .send-btn {
+        margin-top: 2rem;
+    }
+
+}

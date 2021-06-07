@@ -25,6 +25,7 @@
 @import 'components/services';
 @import 'components/projects';
 @import 'components/media';
+@import 'components/form';
     //About
 @import 'components/leaders';
 @import 'components/history';
@@ -41,6 +42,8 @@
 @import 'pages/highways';
 @import 'pages/faq';
 @import 'pages/error';
+@import 'pages/signup';
+@import 'pages/confirm-code';
 
 // 7. Themes
 @import "themes/default";

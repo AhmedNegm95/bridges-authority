@@ -530,6 +530,68 @@ body {
       .media .slider .slide img {
         width: 100%; }
 
+.base-form {
+  padding: 1.5rem;
+  background-color: #FFF;
+  margin-top: 2rem;
+  border-radius: 6px; }
+  .base-form h2 {
+    font-weight: 600;
+    margin-bottom: 2rem; }
+  .base-form label {
+    font-weight: bold; }
+  .base-form input::placeholder,
+  .base-form textarea::placeholder {
+    color: #bfbfbf;
+    font-size: 1.1rem; }
+  .base-form .icon {
+    position: relative; }
+    .base-form .icon img {
+      position: absolute;
+      left: 1rem;
+      top: 50%;
+      transform: translateY(-50%);
+      height: 1rem; }
+  .base-form .upload .upload-label {
+    background-color: rgba(157, 207, 232, 0.4);
+    color: #016599;
+    padding: 1rem 0;
+    border: 1px dashed rgba(1, 101, 153, 0.4);
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .base-form .upload .upload-label img {
+      margin-left: .5rem;
+      height: 1.5rem; }
+  .base-form .send-btn {
+    margin-top: 1rem; }
+    .base-form .send-btn .btn {
+      background-color: #016599;
+      color: #FFF;
+      width: 100%;
+      padding: 1rem 0;
+      border-radius: 50px;
+      font-weight: bold; }
+  .base-form .registered {
+    margin-top: 1rem; }
+    .base-form .registered span {
+      margin-left: .5rem;
+      color: #b7b7b8; }
+    .base-form .registered a:link,
+    .base-form .registered a:visited {
+      color: #016599;
+      font-weight: 600; }
+  .base-form .forget-pass {
+    margin-top: .5rem;
+    margin-bottom: 0;
+    display: flex;
+    align-items: center; }
+    .base-form .forget-pass a:link,
+    .base-form .forget-pass a:visited {
+      color: #b7b7b8;
+      text-decoration: none; }
+
 @media (max-width: 992px) {
   .leaders .boxes {
     transform: scale(0.5); } }
@@ -775,26 +837,6 @@ body {
 .contact-page {
   background-color: #f8f8f9;
   padding: 4rem 0; }
-  .contact-page .contact-form {
-    padding: 1.5rem;
-    background-color: #FFF;
-    margin-top: 2rem;
-    border-radius: 6px; }
-    .contact-page .contact-form label {
-      font-weight: bold; }
-    .contact-page .contact-form input::placeholder,
-    .contact-page .contact-form textarea::placeholder {
-      color: #bfbfbf;
-      font-size: 1.1rem; }
-    .contact-page .contact-form .send-btn {
-      margin-top: 1rem; }
-      .contact-page .contact-form .send-btn .btn {
-        background-color: #016599;
-        color: #FFF;
-        width: 100%;
-        padding: 1rem 0;
-        border-radius: 50px;
-        font-weight: bold; }
 
 .tenders-page {
   background-color: #f5f5f5;
@@ -1030,3 +1072,30 @@ body {
     .error-page .error-desc h3 {
       font-weight: bold;
       margin-top: 2rem; }
+
+.signup-page {
+  background-color: #f8f8f9;
+  padding: 4rem 0; }
+
+.confirm-code-page {
+  background-color: #f8f8f9;
+  padding: 4rem 0; }
+  .confirm-code-page p.desc {
+    color: #b7b7b8; }
+  .confirm-code-page .codes {
+    display: flex;
+    justify-content: center; }
+    .confirm-code-page .codes input {
+      width: 3rem;
+      border: none;
+      border-bottom: 1px solid red; }
+      .confirm-code-page .codes input:not(:last-child) {
+        margin-left: 1rem; }
+      .confirm-code-page .codes input:active, .confirm-code-page .codes input:focus {
+        outline: none; }
+  .confirm-code-page p.message {
+    color: #b7b7b8;
+    margin-top: 1.5rem;
+    margin-bottom: 0; }
+  .confirm-code-page .send-btn {
+    margin-top: 2rem; }
