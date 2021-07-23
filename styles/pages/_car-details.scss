@@ -1,0 +1,115 @@
+.car-details-page {
+    background-color: $color-white-ghost;
+    padding: 4rem 0;
+
+    .vehicle-card {
+        margin-top: 1.5rem;
+
+        .info {
+            margin-top: 1rem;
+
+            .options {
+                display: flex;
+    
+                .option {
+                    color: $color-gray;
+                    cursor: pointer;
+
+                    img {
+                        height: 1.5rem;
+                        margin-left: .3rem;
+                    }
+    
+                    &:first-child {
+                        color: $color-primary;
+                        margin-left: 1rem;
+                    }
+    
+                    &:last-child {
+                        img {
+                            height: 1.2rem;
+                        }
+                    }
+                    
+                }
+            }
+        }
+    }
+
+    .sub-details {
+        margin-top: 2.5rem;
+
+        .cost {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+
+            span {
+                font-weight: bold;
+                font-size: 1.1rem;
+            }
+
+            span:first-child {
+                margin-left: 1rem;
+                color: $color-primary;
+            }
+        }
+
+        .action-btns {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 1rem;
+    
+            .add-btn {
+                background-color: $color-primary;
+                color: $color-white;
+                padding: .9rem 4rem;
+                border-radius: 50px;
+            }
+    
+            .cancel-btn {
+                color: $color-gray;
+            }
+        }
+
+    }
+
+    .modal {
+
+        .modal-dialog {
+
+            .modal-content {
+
+                .modal-body {
+
+                    text-align: center;
+                    padding-top: 2rem;
+
+                    p {
+                        font-weight: bold;
+                        font-size: 1.1rem;
+                    }
+
+                    .action-btns {
+                        display: flex;
+                        justify-content: space-between;
+                        margin-top: 2rem;
+                
+                        .add-btn {
+                            background-color: $color-danger;
+                            color: $color-white;
+                            padding: .9rem 4rem;
+                            border-radius: 50px;
+                        }
+                
+                        .cancel-btn {
+                            color: $color-gray;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}

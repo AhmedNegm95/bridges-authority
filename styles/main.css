@@ -591,6 +591,20 @@ body {
     .base-form .forget-pass a:visited {
       color: #b7b7b8;
       text-decoration: none; }
+  .base-form select {
+    background-image: url("../../images/icons/ic-ic-arch-down.svg");
+    background-repeat: no-repeat, repeat;
+    background-position: left .8rem top 50%, 0 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    color: #bfbfbf;
+    font-size: 1.1rem; }
+  .base-form .datepicker {
+    background-image: url("../../images/icons/calendar-interface-symbol-tool.svg");
+    background-repeat: no-repeat, repeat;
+    background-position: left .8rem top 50%, 0 0;
+    background-size: 1.5rem 1.5rem; }
 
 @media (max-width: 992px) {
   .leaders .boxes {
@@ -773,6 +787,43 @@ body {
           margin-top: 2rem; }
           .history .milestones .circles-line .circle .desc .text p {
             margin-bottom: 0; }
+
+.vehicle-card {
+  padding: 2rem;
+  background-color: #FFF;
+  border-radius: 8px; }
+  .vehicle-card .head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .vehicle-card .head h3 {
+      margin-bottom: 0;
+      font-weight: 600; }
+    .vehicle-card .head .options {
+      display: flex; }
+      .vehicle-card .head .options .option {
+        color: #bfbfbf; }
+        .vehicle-card .head .options .option img {
+          height: 1.5rem;
+          margin-left: .3rem; }
+        .vehicle-card .head .options .option:first-child {
+          color: #016599;
+          margin-left: 1rem; }
+        .vehicle-card .head .options .option:last-child img {
+          height: 1.2rem; }
+  .vehicle-card .info {
+    margin-top: 2rem; }
+    .vehicle-card .info h5 {
+      font-weight: 600; }
+    .vehicle-card .info p {
+      font-weight: 600;
+      margin-top: 1rem; }
+    .vehicle-card .info .row:last-child {
+      margin-top: 1rem; }
+      .vehicle-card .info .row:last-child img {
+        margin-top: 1rem;
+        height: 200px;
+        border-radius: 8px; }
 
 .about-page {
   background-color: #f8f8f9; }
@@ -1099,3 +1150,148 @@ body {
     margin-bottom: 0; }
   .confirm-code-page .send-btn {
     margin-top: 2rem; }
+
+.account {
+  background-color: #f8f8f9;
+  padding-bottom: 6rem; }
+  .account .nav-tabs {
+    padding: 4.5rem 0; }
+    .account .nav-tabs .nav-item .nav-link {
+      color: #016599;
+      padding: 1rem 4rem; }
+      .account .nav-tabs .nav-item .nav-link.active {
+        color: #FFF; }
+  .account .account-info {
+    background-color: #FFF;
+    border-radius: 8px;
+    padding-bottom: 3rem; }
+    .account .account-info .base-form {
+      padding: 2rem 2.5rem; }
+    .account .account-info .photo-info {
+      padding-right: 2.5rem; }
+      .account .account-info .photo-info h6 {
+        font-weight: 600;
+        margin-bottom: 1.5rem;
+        font-size: 1.2rem; }
+      .account .account-info .photo-info .personal-img img {
+        height: 170px;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 8px; }
+      .account .account-info .photo-info .upload {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%; }
+        .account .account-info .photo-info .upload p img {
+          width: 1rem;
+          margin-left: .5rem; }
+        .account .account-info .photo-info .upload p:first-child {
+          color: #016599; }
+        .account .account-info .photo-info .upload p:last-child {
+          color: #bfbfbf; }
+    .account .account-info .save-info {
+      padding-right: 2.5rem;
+      margin-top: 2rem;
+      font-weight: 600; }
+      .account .account-info .save-info .save-btn {
+        background-color: #016599;
+        color: #FFF;
+        padding: 1rem 4rem;
+        border-radius: 100px; }
+      .account .account-info .save-info .cancel-btn {
+        color: #bfbfbf; }
+  .account .vehicles-info .add-vehicle {
+    display: flex;
+    justify-content: flex-end; }
+    .account .vehicles-info .add-vehicle .add-btn {
+      background-color: #016599;
+      color: #FFF;
+      font-weight: 600;
+      padding: 1rem 4rem;
+      border-radius: 50px; }
+  .account .vehicles-info .vehicle-card {
+    margin-top: 2rem; }
+
+.footer {
+  margin-top: 0; }
+
+.add-car-page {
+  background-color: #f8f8f9;
+  padding: 4rem 0; }
+  .add-car-page .base-form {
+    padding-left: 5rem;
+    padding-right: 5rem; }
+  .add-car-page .action-btns {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem; }
+    .add-car-page .action-btns .add-btn {
+      background-color: #016599;
+      color: #FFF;
+      padding: .9rem 4rem;
+      border-radius: 50px; }
+    .add-car-page .action-btns .cancel-btn {
+      color: #bfbfbf; }
+
+.car-details-page {
+  background-color: #f8f8f9;
+  padding: 4rem 0; }
+  .car-details-page .vehicle-card {
+    margin-top: 1.5rem; }
+    .car-details-page .vehicle-card .info {
+      margin-top: 1rem; }
+      .car-details-page .vehicle-card .info .options {
+        display: flex; }
+        .car-details-page .vehicle-card .info .options .option {
+          color: #bfbfbf;
+          cursor: pointer; }
+          .car-details-page .vehicle-card .info .options .option img {
+            height: 1.5rem;
+            margin-left: .3rem; }
+          .car-details-page .vehicle-card .info .options .option:first-child {
+            color: #016599;
+            margin-left: 1rem; }
+          .car-details-page .vehicle-card .info .options .option:last-child img {
+            height: 1.2rem; }
+  .car-details-page .sub-details {
+    margin-top: 2.5rem; }
+    .car-details-page .sub-details .cost {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%; }
+      .car-details-page .sub-details .cost span {
+        font-weight: bold;
+        font-size: 1.1rem; }
+      .car-details-page .sub-details .cost span:first-child {
+        margin-left: 1rem;
+        color: #016599; }
+    .car-details-page .sub-details .action-btns {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 1rem; }
+      .car-details-page .sub-details .action-btns .add-btn {
+        background-color: #016599;
+        color: #FFF;
+        padding: .9rem 4rem;
+        border-radius: 50px; }
+      .car-details-page .sub-details .action-btns .cancel-btn {
+        color: #bfbfbf; }
+  .car-details-page .modal .modal-dialog .modal-content .modal-body {
+    text-align: center;
+    padding-top: 2rem; }
+    .car-details-page .modal .modal-dialog .modal-content .modal-body p {
+      font-weight: bold;
+      font-size: 1.1rem; }
+    .car-details-page .modal .modal-dialog .modal-content .modal-body .action-btns {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 2rem; }
+      .car-details-page .modal .modal-dialog .modal-content .modal-body .action-btns .add-btn {
+        background-color: #e01f3d;
+        color: #FFF;
+        padding: .9rem 4rem;
+        border-radius: 50px; }
+      .car-details-page .modal .modal-dialog .modal-content .modal-body .action-btns .cancel-btn {
+        color: #bfbfbf; }

@@ -137,6 +137,23 @@ $(document).ready(function () {
   $('.question .head .btn').click(function () {
     $(this).children('img').toggleClass('rotate')
   })
+
+  //datepicker
+
+  $('input[name="dates"]').daterangepicker({
+    autoUpdateInput: false,
+    locale: {
+      cancelLabel: 'Clear'
+    }
+  });
+
+  $('input[name="dates"]').on('apply.daterangepicker', function(ev, picker) {
+    $(this).val(picker.startDate.format('MM/DD/YYYY') + ' - ' + picker.endDate.format('MM/DD/YYYY'));
+  });
+
+  $('input[name="dates"]').on('cancel.daterangepicker', function(ev, picker) {
+      $(this).val('');
+  });
   
 
 });

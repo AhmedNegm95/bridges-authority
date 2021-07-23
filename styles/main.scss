@@ -29,6 +29,8 @@
     //About
 @import 'components/leaders';
 @import 'components/history';
+    //Account
+@import 'components/vehicle-card';
 
 // 6. Page-specific styles
 @import "pages/home";
@@ -44,6 +46,9 @@
 @import 'pages/error';
 @import 'pages/signup';
 @import 'pages/confirm-code';
+@import 'pages/account';
+@import 'pages/add-car';
+@import 'pages/car-details';
 
 // 7. Themes
 @import "themes/default";
