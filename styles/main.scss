@@ -31,6 +31,8 @@
 @import 'components/history';
     //Account
 @import 'components/vehicle-card';
+@import 'components/news-card';
+@import 'components/media-card';
 
 // 6. Page-specific styles
 @import "pages/home";
@@ -49,6 +51,8 @@
 @import 'pages/account';
 @import 'pages/add-car';
 @import 'pages/car-details';
+@import 'pages/news';
+@import 'pages/media';
 
 // 7. Themes
 @import "themes/default";

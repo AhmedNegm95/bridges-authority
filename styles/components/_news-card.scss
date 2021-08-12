@@ -1,0 +1,52 @@
+.news-card {
+    background-color: $color-white;
+    border-radius: 8px;
+    overflow: hidden;
+
+    .card-img {
+        position: relative;
+
+        > img {
+            width: 100%;
+        }
+
+        .date {
+            position: absolute;
+            bottom: 1rem;
+            right: 1.5rem;
+
+            display: flex;
+            align-items: center;
+
+            color: $color-white;
+            font-size: .8rem;
+
+            img {
+                height: 1rem;
+                margin-left: .5rem;
+            }
+        }
+    }
+
+    .card-content {
+        padding: 1rem;
+
+        .heading {
+            font-size: 1.5rem;
+        }
+
+        .desc {
+            color: $color-gray-light;
+            font-size: 1.1rem;
+            margin-top: 1.5rem;
+        }
+
+        .more {
+            color: $color-primary;
+            font-size: 1.2rem;
+            margin-bottom: 0;
+            font-weight: bold;
+        }
+    }
+
+}

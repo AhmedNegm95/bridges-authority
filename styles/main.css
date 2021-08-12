@@ -825,6 +825,59 @@ body {
         height: 200px;
         border-radius: 8px; }
 
+.news-card {
+  background-color: #FFF;
+  border-radius: 8px;
+  overflow: hidden; }
+  .news-card .card-img {
+    position: relative; }
+    .news-card .card-img > img {
+      width: 100%; }
+    .news-card .card-img .date {
+      position: absolute;
+      bottom: 1rem;
+      right: 1.5rem;
+      display: flex;
+      align-items: center;
+      color: #FFF;
+      font-size: .8rem; }
+      .news-card .card-img .date img {
+        height: 1rem;
+        margin-left: .5rem; }
+  .news-card .card-content {
+    padding: 1rem; }
+    .news-card .card-content .heading {
+      font-size: 1.5rem; }
+    .news-card .card-content .desc {
+      color: #b7b7b8;
+      font-size: 1.1rem;
+      margin-top: 1.5rem; }
+    .news-card .card-content .more {
+      color: #016599;
+      font-size: 1.2rem;
+      margin-bottom: 0;
+      font-weight: bold; }
+
+.media-card {
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative; }
+  .media-card > img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover; }
+  .media-card .date {
+    position: absolute;
+    bottom: 1rem;
+    right: 1.5rem;
+    display: flex;
+    align-items: center;
+    color: #FFF;
+    font-size: .8rem; }
+    .media-card .date img {
+      height: 1rem;
+      margin-left: .5rem; }
+
 .about-page {
   background-color: #f8f8f9; }
   .about-page .desc-part {
@@ -1295,3 +1348,61 @@ body {
         border-radius: 50px; }
       .car-details-page .modal .modal-dialog .modal-content .modal-body .action-btns .cancel-btn {
         color: #bfbfbf; }
+
+.news-page {
+  background-color: #f5f5f5;
+  padding-top: 2rem;
+  padding-bottom: 2rem; }
+  .news-page .head {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between; }
+    .news-page .head .filter img {
+      margin-left: 1rem; }
+    .news-page .head .filter .filter-text {
+      display: inline-block;
+      background-color: #016599;
+      color: #FFF;
+      padding: .4rem 1rem;
+      border-radius: 30px; }
+  .news-page .news-content .news-card {
+    margin-top: 1rem; }
+  .news-page .news-content .more-read {
+    margin-top: 1rem; }
+    .news-page .news-content .more-read .heading {
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin-bottom: 2rem; }
+  .news-page .news-content .read-card {
+    background-color: #FFF;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    margin-top: 1rem; }
+    .news-page .news-content .read-card .card-img img {
+      object-fit: cover;
+      width: 100%;
+      height: 210px; }
+    .news-page .news-content .read-card .content {
+      padding: 1rem 0 1rem 1rem;
+      margin-right: .75rem;
+      line-height: 1.6; }
+      .news-page .news-content .read-card .content .date {
+        font-size: .9rem;
+        color: #b7b7b8; }
+      .news-page .news-content .read-card .content h4 {
+        font-size: 1.1rem;
+        font-weight: bold;
+        margin-top: .5rem;
+        line-height: 1.6; }
+      .news-page .news-content .read-card .content p {
+        margin-bottom: 0;
+        font-size: .9rem;
+        color: #b7b7b8; }
+
+.news-page {
+  background-color: #f5f5f5;
+  padding-top: 2rem;
+  padding-bottom: 2rem; }
+  .news-page .heading {
+    margin-top: 2rem; }
