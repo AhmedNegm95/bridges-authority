@@ -2,6 +2,7 @@
     border-radius: 8px;
     overflow: hidden;
     position: relative;
+    margin-top: 1.5rem;
 
     > img {
         width: 100%;
@@ -9,20 +10,41 @@
         object-fit: cover;
     }
 
-    .date {
+    .overlay {
         position: absolute;
-        bottom: 1rem;
-        right: 1.5rem;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
 
         display: flex;
-        align-items: center;
+        flex-direction: column;
+        justify-content: flex-end;
+        padding: 1.5rem;
 
         color: $color-white;
-        font-size: .8rem;
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 45%, #000 86%);
+        opacity: 0.7;
 
-        img {
-            height: 1rem;
-            margin-left: .5rem;
+        .date {
+            // position: absolute;
+            // bottom: 1rem;
+            // right: 1.5rem;
+            display: flex;
+            align-items: center;
+            font-size: .85rem;
+            color: $color-gray;
+            img {
+                height: 1rem;
+                margin-left: .5rem;
+            }
+        }
+
+        .heading {
+            font-size: 1.2rem;
+            margin-top: .5rem;
         }
     }
 }
